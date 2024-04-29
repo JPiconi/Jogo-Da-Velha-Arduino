@@ -13,7 +13,7 @@
     var haVencedor;
 
     haVencedor = false;
-    var tabuleiro = createArray(9);
+    var tabuleiro = Array(9);
     var index;
 
     // Limpar/Zerar o tabuleiro
@@ -34,9 +34,12 @@
     // anotar/Registrar a jogada do 1º Jogador
     velha = 1;
     do {
-       console.log(tabuleiro[0].ToString() + tabuleiro[1] + tabuleiro[2]);
-       console.log(tabuleiro[3].ToString() + tabuleiro[4] + tabuleiro[5]);
-       console.log(tabuleiro[6].ToString() + tabuleiro[7] + tabuleiro[8]);
+       console.log(tabuleiro[0].toString
+() + tabuleiro[1] + tabuleiro[2]);
+       console.log(tabuleiro[3].toString
+() + tabuleiro[4] + tabuleiro[5]);
+       console.log(tabuleiro[6].toString
+() + tabuleiro[7] + tabuleiro[8]);
         jogada = "";
 
         // registrar a jogada do primeiro jogador
@@ -80,9 +83,9 @@
     } else {
        console.log("Deu velha!!");
     }
-   console.log(tabuleiro[0].ToString() + tabuleiro[1] + tabuleiro[2]);
-   console.log(tabuleiro[3].ToString() + tabuleiro[4] + tabuleiro[5]);
-   console.log(tabuleiro[6].ToString() + tabuleiro[7] + tabuleiro[8]);
+   console.log(tabuleiro[0].toString() + tabuleiro[1] + tabuleiro[2]);
+   console.log(tabuleiro[3].toString() + tabuleiro[4] + tabuleiro[5]);
+   console.log(tabuleiro[6].toString() + tabuleiro[7] + tabuleiro[8]);
 }
 
 function validaPosicao(entrada) {
@@ -126,3 +129,4 @@ function validatabuleiro(jogadordaVez, tabuleiro) {
     
     return validatabuleiro;
 }
+
