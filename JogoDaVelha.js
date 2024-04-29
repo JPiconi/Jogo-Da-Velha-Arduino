@@ -90,10 +90,10 @@
 
 function validaPosicao(entrada) {
     var entradaValida;
-
+entrada
     entradaValida = false;
-   console.log(entrada.length());
-    if (entrada.length() == 3) {
+   console.log(entrada.length);
+    if (entrada.length == 3) {
         if (entrada.charAt(0) == "0" || entrada.charAt(0) == "1" || entrada.charAt(0) == "2") {
             if (entrada.charAt(2) == "0" || entrada.charAt(2) == "1" || entrada.charAt(2) == "2") {
                 entradaValida = true;
@@ -109,17 +109,17 @@ function validatabuleiro(jogadordaVez, tabuleiro) {
 
     validatabuleiro = 0;
     if (tabuleiro[0] == jogadordaVez && tabuleiro[1] == jogadordaVez && tabuleiro[2] == jogadordaVez || tabuleiro[3] == jogadordaVez && tabuleiro[4] == jogadordaVez && tabuleiro[5] == jogadordaVez || tabuleiro[6] == jogadordaVez && tabuleiro[7] == jogadordaVez && tabuleiro[8] == jogadordaVez) {
-        validatabuleiro = 2;
+        validatab = 2;
     } else {
 
         // verificar a jogada vencedora nas colunas
         if (tabuleiro[0] == jogadordaVez && tabuleiro[3] == jogadordaVez && tabuleiro[6] == jogadordaVez || tabuleiro[1] == jogadordaVez && tabuleiro[4] == jogadordaVez && tabuleiro[7] == jogadordaVez || tabuleiro[2] == jogadordaVez && tabuleiro[5] == jogadordaVez && tabuleiro[8] == jogadordaVez) {
-            validatabuleiro = 2;
+            validatab = 2;
         } else {
 
             // verificar a jogada vencedora nas diagonais
             if (tabuleiro[0] == jogadordaVez && tabuleiro[4] == jogadordaVez && tabuleiro[8] == jogadordaVez || tabuleiro[2] == jogadordaVez && tabuleiro[4] == jogadordaVez && tabuleiro[6] == jogadordaVez) {
-                validatabuleiro = 2;
+                validatab = 2;
             } else {
 
                 // Troca jogador
