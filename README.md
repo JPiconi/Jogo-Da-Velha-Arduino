@@ -1,5 +1,7 @@
 # Jogo-Da-Velha-Arduino
 
+**Autor:** Júlia Aparecida Piconi
+
 **INTRODUÇÃO:** Neste trabalho recriamos um jogo da velha, tendo sido recriado no flowgorithm.
 
 
