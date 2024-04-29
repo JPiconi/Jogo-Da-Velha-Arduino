@@ -3,7 +3,7 @@
 **INTRODUÇÃO:** Neste trabalho recriamos um jogo da velha, tendo sido recriado no flowgorithm.
 
 
-**CONTEXTO:** Foi recriado apartir de funções e declarações, atribuições, tendo sido programado para ter uma jogabilidade o mais parecida possivel com a realidade
+**CONTEXTO:** Foi recriado apartir de funções, declarações e atribuições, tendo sido programado para ter uma jogabilidade o mais parecida possivel com a realidade
 
 
 o jogo alterna os particpantes, mostra suas jogadas, e, caso seja inválida, o programa dirá ao paticipante para alternar a jogada
