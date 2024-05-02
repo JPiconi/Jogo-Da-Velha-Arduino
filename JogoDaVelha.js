@@ -4,9 +4,9 @@
     // 0: posição vazia
     // 1:para jogador 1
     // 2: para jogador 2
-    var validatabuleiro;
+    var Validatabuleiro;
 
-    validatabuleiro = 0;
+    Validatabuleiro = 0;
     var velha;
     var coluna;
     var linha;
@@ -55,8 +55,8 @@
                 tabuleiro[3 * linha + coluna] = jogadordaVez;
 
                 // verificar o tabuleiro se houver ganhador ou empate finalizar o jogo
-                validatabuleiro = validatabuleiro(jogadordaVez, tabuleiro);
-                if (validatabuleiro != 2) {
+                Validatabuleiro = Validatab(jogadordaVez, tabuleiro);
+                if (Validatabuleiro != 2) {
                     if (jogadordaVez == 1) {
                         jogadordaVez = 2;
                     } else {
@@ -77,7 +77,7 @@
 
         // Simula a função Serial.parseInt() do Arduino
         // Verificar se a posição "jogada" é valída
-    } while (validatabuleiro == 0 && velha <= 9);
+    } while (Validatabuleiro == 0 && velha <= 9);
     if (velha <= 9) {
        console.log("Parabens você venceu Jogador" + jogadordaVez + "!!");
     } else {
@@ -104,22 +104,22 @@ entrada
     return entradaValida;
 }
 
-function validatabuleiro(jogadordaVez, tabuleiro) {
-    var validatabuleiro;
+function Validatab(jogadordaVez, tabuleiro) {
+    var Tabvalidado;
 
-    validatabuleiro = 0;
+    Validatabuleiro = 0;
     if (tabuleiro[0] == jogadordaVez && tabuleiro[1] == jogadordaVez && tabuleiro[2] == jogadordaVez || tabuleiro[3] == jogadordaVez && tabuleiro[4] == jogadordaVez && tabuleiro[5] == jogadordaVez || tabuleiro[6] == jogadordaVez && tabuleiro[7] == jogadordaVez && tabuleiro[8] == jogadordaVez) {
-        validatab = 2;
+        Tabvalidado = 2;
     } else {
 
         // verificar a jogada vencedora nas colunas
         if (tabuleiro[0] == jogadordaVez && tabuleiro[3] == jogadordaVez && tabuleiro[6] == jogadordaVez || tabuleiro[1] == jogadordaVez && tabuleiro[4] == jogadordaVez && tabuleiro[7] == jogadordaVez || tabuleiro[2] == jogadordaVez && tabuleiro[5] == jogadordaVez && tabuleiro[8] == jogadordaVez) {
-            validatab = 2;
+            Tabvalidado = 2;
         } else {
 
             // verificar a jogada vencedora nas diagonais
             if (tabuleiro[0] == jogadordaVez && tabuleiro[4] == jogadordaVez && tabuleiro[8] == jogadordaVez || tabuleiro[2] == jogadordaVez && tabuleiro[4] == jogadordaVez && tabuleiro[6] == jogadordaVez) {
-                validatab = 2;
+                Tabvalidado = 2;
             } else {
 
                 // Troca jogador
@@ -127,6 +127,6 @@ function validatabuleiro(jogadordaVez, tabuleiro) {
         }
     }
     
-    return validatabuleiro;
+    return Tabvalidado;
 }
 
