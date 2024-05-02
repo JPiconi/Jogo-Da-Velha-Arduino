@@ -60,14 +60,14 @@
                         jogadordaVez = 1;
                     }
                 }
-
+                velha = velha + 1;
                 // verificar a jogada vencedora nas linhas
             } else {
                console.log("Esta posição já está ocupada!!!");
 
                 // informar ao jogador 1 que a posição esta preenchida e é invalida. Jogador precisa informer uma valida
             }
-            velha = velha + 1;
+           
         } else {
            console.log("Posição invalida, favor insira outra posição!");
         }
@@ -126,4 +126,5 @@ function Validatab(jogadordaVez, tabuleiro) {
     
     return Tabvalidado;
 }
+
 
